@@ -2,7 +2,7 @@
 
 Everyone has an opinion about JavaScript. Here is mine.
 
-JavaScript is certainly [the world's most misunderstood computer language](http://www.crockford.com/javascript/javascript.html). At the same time it is now in a fundamental position: JavaScript is the language of the web. It gets better over time (while keeping all the bad stuff) and it has spread to almost every platform.
+JavaScript is certainly [the world's most misunderstood computer language](http://www.crockford.com/javascript/javascript.html). At the same time it is now in a fundamental position: JavaScript is the language of the web. It gets better over time (keeping all the bad stuff), while it has spread to almost every platform.
 
 It is also an [artwork](http://aem1k.com/) and great [fun](https://www.destroyallsoftware.com/talks/wat), if you like Kafka.
 
