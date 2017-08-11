@@ -36,22 +36,33 @@ The following reflects my thinking which has changed and will change over time.
 * most of the stuff warned against in [JavaScript The Good Parts](http://shop.oreilly.com/product/9780596517748.do). Book needs an ES6 update.     
 * lots of other stuff not mentioned here
 
-## JavaScript: resources
+## JavaScript: Resources
 
-https://leanpub.com/exploring-es6/
-http://exploringjs.com/es6/index.html
+### Essential
 
-https://leanpub.com/javascriptallongesix/read
+[Exploring ES6](https://leanpub.com/exploring-es6/) by Dr. Axel Rauschmayer
+[Online Version](http://exploringjs.com/es6/index.html)
 
-http://shop.oreilly.com/product/0636920047124.do
-https://github.com/mjavascript/practical-modern-javascript
-(Looks good, I haven't read yet. Will update.)
+### Useful
 
-http://javascriptweekly.com/
+http://www.ecma-international.org/ecma-262/6.0/
+
+https://caniuse.com/
+
+### Become a better programmer
+
+[Professor Frisby's Mostly Adequate Guide](https://github.com/MostlyAdequate/mostly-adequate-guide) by Brian Lonsdorf
+
+[JavaScript Allongé, the "Six" Edition](https://leanpub.com/javascriptallongesix/read) by Reginald Braithwaite
 
 [Eric Elliot](https://ericelliottjs.com/) I don't agree on everything but lots of good stuff.
 
-https://caniuse.com/
+[Modular JavaScript](https://mjavascript.com/) by Nicolás Bevacqua
+(Looks good, I haven't read it yet. Will update.)
+
+# Stay up-to-date
+
+http://javascriptweekly.com/
 
 # Postface
 
