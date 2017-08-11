@@ -6,7 +6,7 @@ JavaScript is certainly [the world's most misunderstood computer language](http:
 
 It is also an [artwork](http://aem1k.com/) and great [fun](https://www.destroyallsoftware.com/talks/wat), if you like Kafka.
 
-What is quite unique about JavaScript is that not only opinionated beginners but also the most prominent experts cannot agree on fundamentals like semicola or how to implement OOP. There seems to be slowly forming some sort of consensus that functional programming is - very - useful. 👏
+What is unique about JavaScript is that not only opinionated beginners but also the most prominent experts cannot agree on fundamentals like semicola or how to implement OOP. There is slowly forming some sort of consensus that functional programming is - very - useful. 👏
 
 The following reflects my thinking which has changed and will change over time.
 
@@ -23,8 +23,8 @@ The following reflects my thinking which has changed and will change over time.
 * use tail recursion when it is properly implemented
 * use object `{}` and array `[]` literals wherever possible
 * did I mention functional programming?      
-* use `class` (because it is now a language standard and makes translating legacy code / code from other languages easy. It helps onboarding. Code is easy to read. Individual prototypical inheritance solutions (I tried many) might be technically superior but suffer from a "not being standardized" problem. Transpilers and the evolving JavaScript standard will hopefully  take care about uder-the-hood problems currently associated with `class`.)
-* use modules for privacy, not classes
+* use `class` (because it is now a language standard and makes translating legacy code / code from other languages easy. It helps onboarding. Code is easy to read. Individual prototypical inheritance solutions (I tried many) might be technically superior but suffer from a "not being standardized" problem. Transpilers and the evolving JavaScript standard will hopefully  take care about under-the-hood problems currently associated with `class`.)
+* use modules for data privacy, not classes
 * small, shallow OOP inheritance hierarchies are ok
 * semicola (language intention and majority of examples)
 * 2 spaces for indentation (the argumentation for using tabs is interesting though. In practice it creates problems.)
@@ -63,7 +63,7 @@ https://caniuse.com/
 [Eric Elliot](https://ericelliottjs.com/) I don't agree on everything but lots of good stuff.
 
 [Modular JavaScript](https://mjavascript.com/) by Nicolás Bevacqua
-(Looks good, I haven't read it yet. Will update.)
+(Looks good, I haven't read it yet. Will update accordingly.)
 
 # Stay up-to-date
 
