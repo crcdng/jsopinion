@@ -18,10 +18,10 @@ The following reflects my thinking which has changed and will change over time.
 * `===` except for `== null`
 * use `null` to initialize variables that don't have a value yet (not `undefined`), this communicates intention
 * arrow functions in callbacks   
-* rest operator, default function parameters   
+* default function parameters, spread / rest operators  
 * move from callbacks to promises then to `async/await`
 * use tail recursion when it is properly implemented
-* use object `{}` and array `[]` literals wherever possible
+* use object `{}` and array `[]` literals
 * did I mention functional programming?      
 * use `class` (because it is now a language standard and makes translating legacy code / code from other languages easy. It helps onboarding. Code is easy to read. Individual prototypical inheritance solutions (I tried many) might be technically superior but suffer from a "not being standardized" problem. Transpilers and the evolving JavaScript standard will hopefully  take care about under-the-hood problems currently associated with `class`.)
 * use modules for data privacy, not classes
@@ -32,12 +32,15 @@ The following reflects my thinking which has changed and will change over time.
 
 ## JavaScript: avoid
 
-* idiomatic ES5 constructions, including  `self = this`, `bind`, IFFE etc. Not necessary anymore.   
+* write ES5 code 'because it's more common'
+* idiomatic ES5 constructions, including `self = this`, `bind`, `apply`, IFFE etc. Not necessary anymore.   
+* `this` (except in classes or frameworks that dictate `this`)   
 * var (because it is almost universally misunderstood. maybe there are exceptions?)   
 * `.prototype` - use `class` instead   
-* `this` (except in classes or frameworks that dictate `this`)   
 * other module systems (?)   
 * `!x` to check for null or undefined
+* `typeof`. If your code relies on static typing, use [TypeScript](https://www.typescriptlang.org)
+* string concatenation (use template literals)
 * most of the stuff warned against in [JavaScript The Good Parts](http://shop.oreilly.com/product/9780596517748.do). Book needs an ES6 update.     
 * lots of other stuff not mentioned here
 
