@@ -13,7 +13,7 @@ The following reflects my thinking which has changed and will change over time.
 ## JavaScript: do's
 
 * ES6, transpile with Babel
-* ES6 modules, use webpack for the Browser   
+* ES6 modules, both Safari >= 10.1.2 and Chrome >= 61 support them, use webpack for other / older browsers or Babel for node.js
 * `let` and `const`
 * `===` except for `== null`
 * use `null` to initialize variables that don't have a value yet (not `undefined`), this communicates intention
