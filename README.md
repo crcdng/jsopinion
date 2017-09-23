@@ -44,7 +44,7 @@ The following Do's and Dont's reflect my thinking (which has changed and will ch
 * write ES5 code 'because it's more common'
 * idiomatic ES5 constructions, including `self = this`, `bind`, `apply`, IFFE etc. Not necessary anymore.   
 * `this` (except in classes or frameworks that dictate `this`)   
-* `var` (because it is almost universally misunderstood. `var` declaration have to be at the top of functions *only*. This is because the language intends it. If you put `var` anywhere else and rely on hoisting you are doing it wrong (see litmus test). Most programmers don't know this or ignore it and hope for the best.   
+* `var` (because it is almost universally misunderstood. `var` declarations have to be at the top of functions *only*. This is because the language intends it. If you put `var` anywhere else and rely on hoisting you are doing it wrong (see litmus test). Most programmers don't know this or ignore it and hope for the best.   
 * `.prototype` - use `class` instead   
 * other module systems (?)   
 * `!x` to check for null or undefined
