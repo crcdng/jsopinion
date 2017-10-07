@@ -20,7 +20,8 @@ The following Do's and Dont's reflect my thinking (which has changed and will ch
 
 ## JavaScript: Do's
 
-* ES6, transpile with Babel
+* ES6
+* transpile with Babel, use babel-preset-env to avoid unnecessary transpiling.
 * ES6 modules, both Safari >= 10.1.2 and Chrome >= 61 support them, use webpack for other / older browsers or Babel for node.js
 * `let` and `const`
 * `===` except for `== null`
