@@ -32,8 +32,8 @@ The following Do's and Dont's reflect my thinking (which has changed and will ch
 * use tail recursion when it is properly implemented
 * use object `{}` and array `[]` literals
 * did I mention functional programming?      
-* use `class` (because it is now a language standard and makes translating legacy code / code from other languages easy. It helps onboarding. Code is easy to read. Individual prototypical inheritance solutions (I tried many) might be technically superior but suffer from a "not being standardized" problem. Transpilers and the evolving JavaScript standard will hopefully  take care about under-the-hood problems currently associated with `class`.)
-* use modules for data privacy, not classes
+* use `class` (because it is now a language standard and makes translating legacy code / code from other languages easy. It helps onboarding. Code is more easy to read. Individual prototypical inheritance solutions (I tried many) might be technically superior but suffer from a ["not being standardized"](https://xkcd.com/927/) problem. Transpilers and the evolving JavaScript standard will hopefully take care about under-the-hood problems currently associated with `class`.)
+* use modules for privacy, not classes
 * small, shallow OOP inheritance hierarchies are ok
 * semicola. If you leave them out and rely on the insertion *repair* mechanism you are doing it wrong (see litmus test).
 * 2 spaces for indentation (the argumentation for using tabs is interesting though. In practice it creates problems.)
