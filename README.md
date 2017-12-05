@@ -26,9 +26,9 @@ The following Do's and Dont's reflect my thinking (which has changed and will ch
 * `let` and `const`
 * `===` except for `== null`
 * use `null` to initialize variables that don't have a value yet (not `undefined`), this communicates intention
-* arrow functions in callbacks   
+* use arrow functions in callbacks when you access `this`  
 * default function parameters, spread / rest operators  
-* move from callbacks to promises then to `async/await`
+* move from callbacks to promises, then to `async/await`
 * use tail recursion when it is properly implemented
 * use object `{}` and array `[]` literals
 * did I mention functional programming?      
@@ -44,8 +44,8 @@ The following Do's and Dont's reflect my thinking (which has changed and will ch
 
 * writing ES5 code 'because it's more common'
 * idiomatic ES5 constructions, including `self = this`, `bind`, `apply`, IFFE etc. Not necessary anymore.   
-* `this` (except in classes or frameworks that dictate `this`)   
-* `var` (because it is almost universally misunderstood. `var` declarations have to be at the top of functions *only*. This is because the language intends it. If you put `var` anywhere else and rely on hoisting you are doing it wrong (see litmus test). Most programmers don't know this or ignore it and hope for the best.   
+* `this` (except in classes or in frameworks that dictate `this`)   
+* `var` (because it is almost universally misunderstood. `var` declarations have to be at the top of functions *only*. This is because the language intends it. If you put `var` anywhere else and rely on hoisting you are doing it wrong (see litmus test). Most programmers don't know this or ignore it and hope for the best. If your intention is to declare a variable somewhere in the middle of a function, use `let`.  
 * `.prototype` - use `class` instead   
 * other module systems (?)   
 * `!x` to check for null or undefined
