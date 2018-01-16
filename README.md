@@ -24,32 +24,33 @@ The following Do's and Dont's reflect my thinking (which has changed and will ch
 * transpile with Babel, use babel-preset-env to avoid unnecessary transpiling.
 * ES6 modules, both Safari >= 10.1.2 and Chrome >= 61 support them, use webpack for other / older browsers or Babel for node.js
 * `let` and `const`
-* `===` except for `== null`
+* `===` except for `== null` (in case you need to be convinced: https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-true)
 * use `null` to initialize variables that don't have a value yet (not `undefined`), this communicates intention
-* use arrow functions in callbacks when you access `this`  
-* default function parameters, spread / rest operators  
+* use arrow functions in callbacks when you have to access `this`
+* use default function parameters, spread / rest operators  
 * move from callbacks to promises, then to `async/await`
 * use tail recursion when it is properly implemented
 * use object `{}` and array `[]` literals
 * did I mention functional programming?      
-* use `class` (because it is now a language standard and makes translating legacy code / code from other languages easy. It helps onboarding. Code is more easy to read. Individual prototypical inheritance solutions (I tried many) might be technically superior but suffer from a ["not being standardized"](https://xkcd.com/927/) problem. Transpilers and the evolving JavaScript standard will hopefully take care about under-the-hood problems currently associated with `class`.)
-* use modules for privacy, not classes
 * small, shallow OOP inheritance hierarchies are ok
+* if your programe is object-oriented use `class` (because it is now a language standard and makes translating legacy code / code from other languages easy. It helps onboarding. Code is easy to read. Individual prototypical inheritance and object factory solutions (I tried many) might be technically superior but suffer from a ["not being standardized"](https://xkcd.com/927/) problem. Transpilers and the evolving JavaScript standard will hopefully take care about problems currently associated with `class`.)
+* use modules for privacy, not classes
 * semicola. If you leave them out and rely on the insertion *repair* mechanism you are doing it wrong (see litmus test).
-* 2 spaces for indentation (the argumentation for using tabs is interesting though. In practice it creates problems.)
-* (this means you can use [semistandard](https://github.com/Flet/semistandard) as a linter)
-* Use a linter. Your code will be safer, better and much more pleasant to read.
+* 2 spaces for indentation (the argumentation for using tabs is interesting though. In practice it creates problems)
+* use a linter. your code will be safer, better and much more pleasant to read.
+* if you follow these points you can use [semistandard](https://github.com/Flet/semistandard) as your linter
 
 ## JavaScript: Avoid
 
 * writing ES5 code 'because it's more common'
+* teaching ES5 code (!!)
 * idiomatic ES5 constructions, including `self = this`, `bind`, `apply`, IFFE etc. Not necessary anymore.   
 * `this` (except in classes or in frameworks that dictate `this`)   
 * `var` (because it is almost universally misunderstood. `var` declarations have to be at the top of functions *only*. This is because the language intends it. If you put `var` anywhere else and rely on hoisting you are doing it wrong (see litmus test). Most programmers don't know this or ignore it and hope for the best. If your intention is to declare a variable somewhere in the middle of a function, use `let`.  
 * `.prototype` - use `class` instead   
-* other module systems (?)   
+* other module systems, migrate to ES6 modules   
 * `!x` to check for null or undefined
-* `typeof`. If your code relies on static typing, use [TypeScript](https://www.typescriptlang.org)
+* `typeof`. If your code relies on static typing, use [TypeScript](https://www.typescriptlang.org) if in your organization people wear neckties, or [PureScript](http://www.purescript.org/) otherwise
 * string concatenation (use template literals)
 * most of the stuff warned against in [JavaScript The Good Parts](http://shop.oreilly.com/product/9780596517748.do). Book needs an ES6 update.     
 * lots of other stuff not mentioned here
