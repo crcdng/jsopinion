@@ -21,20 +21,20 @@ The following Do's and Dont's reflect my thinking (which has changed and will ch
 ## JavaScript: Do's
 
 * ES6
-* transpile with Babel, use babel-preset-env to avoid unnecessary transpiling.
-* ES6 modules, both Safari >= 10.1.2 and Chrome >= 61 support them, use webpack for other / older browsers or Babel for node.js
+* if you need older or Browser-specific versions, still write your code in ES6 and transpile with Babel.
+* ES6 modules, all major browsers support them now, use webpack for other / older browsers or Babel for node.js
 * `let` and `const`
 * `===` except for `== null` (in case you need to be convinced: https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-true)
 * use `null` to initialize variables that don't have a value yet (not `undefined`), this communicates intention
 * use arrow functions in callbacks when you have to access `this`
 * use default function parameters, spread / rest operators  
-* move from callbacks to promises, then to `async/await`
-* use tail recursion when it is properly implemented
+* move from callbacks to `async/await` and learn about Promises
+* use tail recursion after it is fully implemented (this possibly means never)
 * use object `{}` and array `[]` literals
 * did I mention functional programming?      
 * small, shallow OOP inheritance hierarchies are ok
-* if your programe is object-oriented use `class` (because it is now a language standard and makes translating legacy code / code from other languages easy. It helps onboarding. Code is easy to read. Individual prototypical inheritance and object factory solutions (I tried many) might be technically superior but suffer from a ["not being standardized"](https://xkcd.com/927/) problem. Transpilers and the evolving JavaScript standard will hopefully take care about problems currently associated with `class`.)
-* use modules for privacy, not classes
+* if your code is object-oriented use `class` (because it is now a language standard and makes translating legacy code / code from other languages easy. It helps onboarding. Code is easy to read. Individual prototypical inheritance and object factory solutions (I tried many) might be technically superior but suffer from a ["not being standardized"](https://xkcd.com/927/) problem. Transpilers and the evolving JavaScript standard will hopefully take care about problems currently associated with `class`.)
+* use modules, not classes, for privacy
 * semicola. If you leave them out and rely on the insertion *repair* mechanism you are doing it wrong (see litmus test).
 * 2 spaces for indentation (the argumentation for using tabs is interesting though. In practice it creates problems)
 * use a linter. your code will be safer, better and much more pleasant to read.
@@ -74,7 +74,7 @@ https://caniuse.com/
 
 [JavaScript Allongé, the "Six" Edition](https://leanpub.com/javascriptallongesix/read) by Reginald Braithwaite
 
-[Eric Elliot](https://ericelliottjs.com/) I don't agree on everything but lots of good stuff.
+[Eric Elliot](https://ericelliottjs.com/) I don't agree on everything, but lots of good stuff.
 
 [Modular JavaScript](https://mjavascript.com/) by Nicolás Bevacqua
 (Looks good, I haven't read it yet. Will update accordingly.)
