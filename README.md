@@ -38,7 +38,7 @@ The following Do's and Dont's reflect my thinking (which has changed and will ch
 1. semicola. If you leave them out and rely on the insertion *repair* mechanism you are doing it wrong (see litmus test).
 1. 2 spaces for indentation (the argumentation for using tabs is interesting though. In practice it creates problems)
 1. use a linter. your code will be safer, better and much more pleasant to read.
-1. if you follow these points you can use [semistandard](https://github.com/Flet/semistandard) as your linter
+1. if you follow these points you can use [semistandard](https://github.com/standard/semistandard) as your linter
 
 ## JavaScript: Avoid
 
